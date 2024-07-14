@@ -1,0 +1,175 @@
+body {
+  @apply font-sans bg-gray-100;
+}
+
+a {
+  @apply text-inherit no-underline;
+}
+
+/*Estilização do NavBar*/
+
+nav {
+  @apply bg-gray-100 h-14 flex justify-center items-center px-4;
+}
+
+nav.container {
+  @apply max-w-md mx-auto px-4;
+}
+
+nav .container h3:hover {
+  @apply text-blue-500 cursor-pointer;
+}
+
+/*Estilização do Footer*/
+
+footer {
+  @apply bg-gray-100 h-14 flex justify-center items-center px-4;
+}
+
+footer.container {
+  @apply max-w-md mx-auto px-4;
+}
+
+footer p {
+  @apply text-gray-600 text-sm;
+}
+
+/*Estilização do Hero*/
+
+section {
+  @apply h-screen flex justify-center items-center text-center;
+}
+
+section.container {
+  @apply max-w-md mx-auto;
+
+}
+
+section h1 {
+  @apply text-[64px] sm:text-[56px] text-[40px] font-extrabold;
+  @apply text-black; 
+}
+
+section p {
+  @apply text-[16px] font-normal text-gray-600 mb-10; 
+}
+/*Estilização botão Section*/
+
+section button {
+  @apply bg-white text-black font-bold py-4 px-8 rounded-3xl shadow-2xl;
+}
+
+section button:hover {
+  @apply bg-blue-400 text-white cursor-not-allowed;
+}
+
+/*Estilização do Sneaker*/
+
+.cards {
+  @apply flex flex-wrap justify-center;
+  @apply -mx-4;
+
+}
+
+
+.card {
+
+  @apply bg-white rounded shadow-md p-2 mb-2 max-w-sm inline-block;
+  @apply flex-1;
+  @apply mr-4;
+  @apply mb-8; 
+}
+
+
+.card img {
+  @apply w-40 h-40 object-cover rounded-t;
+}
+
+
+.card h2 {
+  @apply text-lg font-bold mb-2;
+}
+
+
+.card .preco_tenis {
+  @apply text-black font-semibold;
+}
+
+.card .descricao_tenis {
+  @apply text-xs text-gray-600;
+  @apply leading-relaxed;
+}
+
+/* Estilização botões geral*/
+
+.button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-3xl;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  @apply shadow-md;
+}
+
+
+.button:focus {
+  @apply outline-none ring-2 ring-blue-400;
+}
+
+
+/* Estilização botões de filtro */
+
+.filter-buttons {
+  @apply flex flex-wrap justify-center mb-4;
+}
+
+.filter-buttons button {
+  @apply mr-2 px-4 py-2 bg-white text-black font-bold rounded-3xl cursor-pointer;
+}
+
+.filter-buttons button:hover {
+  @apply bg-blue-400 text-white;
+}
+
+.input-group {
+  @apply flex flex-wrap justify-center mb-4;
+}
+
+.input-group input[type="number"] {
+  @apply w-16 px-4 py-2 mr-2 border border-gray-300 rounded-md;
+}
+
+.sneaker-list {
+  @apply flex flex-wrap justify-center;
+}
+
+.no-results {
+  @apply text-center text-gray-600 mb-4;
+}
+
+.price-filter {
+  @apply flex flex-wrap justify-center;
+}
+
+.price-filter input[type="number"] {
+  @apply w-16 px-2 py-2 border border-black rounded-3xl;
+}
+
+.price-filter input[type="number"]:first-child {
+  @apply mr-4;
+}
+
+.price-filter label {
+  @apply text-sm text-gray-600;
+}
+
+.title-container {
+  @apply flex-row justify-end mb-4 mr-auto ml-4;
+  max-width: 50%; 
+}
+
+.sneaker-list h1{
+  @apply sm:text-[40px] text-[30px] font-extrabold text-black; 
+}
