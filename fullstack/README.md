@@ -18,7 +18,7 @@
   ```
   npm run start
 
-  - Para rodar os testes da aplicação:
+- Para rodar os testes da aplicação:
 ```
   sudo apt intall jest
 
